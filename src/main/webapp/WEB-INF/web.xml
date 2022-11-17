@@ -10,12 +10,12 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <servlet>
-  <servlet-name>first</servlet-name>  
-<servlet-class>com.hnd.first</servlet-class>  
+  <servlet-name>second</servlet-name>  
+<servlet-class>com.hnd.second</servlet-class>  
 </servlet>  
   
 <servlet-mapping>  
-<servlet-name>first</servlet-name>  
-<url-pattern>/first</url-pattern>  
+<servlet-name>second</servlet-name>  
+<url-pattern>/second</url-pattern>  
 </servlet-mapping> 
 </web-app>
