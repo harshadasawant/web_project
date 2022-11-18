@@ -18,4 +18,13 @@
 <servlet-name>second</servlet-name>  
 <url-pattern>/second</url-pattern>  
 </servlet-mapping> 
+
+<servlet>  
+<servlet-name>third</servlet-name> 
+<servlet-class>com.hnd.third</servlet-class>  
+</servlet> 
+<servlet-mapping>  
+<servlet-name>third</servlet-name>  
+<url-pattern>/third</url-pattern>  
+</servlet-mapping> 
 </web-app>
