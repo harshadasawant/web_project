@@ -22,7 +22,19 @@
 <servlet>  
 <servlet-name>third</servlet-name> 
 <servlet-class>com.hnd.third</servlet-class>  
+<init-param>
+           <param-name>username</param-name>
+           <param-value>xyz</param-value>
+       </init-param>
+ <init-param>
+           <param-name>password</param-name>
+           <param-value>welcome@123</param-value>
+       </init-param>
 </servlet> 
+<context-param>  
+<param-name>company</param-name>  
+<param-value>HnD IT Solution</param-value>  
+</context-param>
 <servlet-mapping>  
 <servlet-name>third</servlet-name>  
 <url-pattern>/third</url-pattern>  

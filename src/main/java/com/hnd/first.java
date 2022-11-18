@@ -1,6 +1,8 @@
 package com.hnd;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,7 +29,13 @@ public class first extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at First: ").append(request.getContextPath());
+//		RequestDispatcher rd=request.getRequestDispatcher("second");  
+//		//servlet2 is the url-pattern of the second servlet  
+//		  
+//		rd.include(request, response);
+//		response.getWriter().println("  after request");
+		response.sendRedirect("second");
 	}
 
 	/**
