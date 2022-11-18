@@ -3,6 +3,7 @@ package com.hnd;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +11,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class third extends  HttpServlet {
+	
+	int count; 
+	public void init(ServletConfig config) throws ServletException {
+		
+		count=0;
+		}
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		 response.setContentType("text/html");  
+//		 count=0;   
+		 PrintWriter out = response.getWriter();  
+		          out.print(count++);
+	}
 
 public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
 {
