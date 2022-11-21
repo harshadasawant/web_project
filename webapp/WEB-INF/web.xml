@@ -39,4 +39,35 @@
 <servlet-name>third</servlet-name>  
 <url-pattern>/third</url-pattern>  
 </servlet-mapping> 
+
+  <servlet>  
+<servlet-name>fourth</servlet-name>  
+<servlet-class>com.hnd.Fourth</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>fourth</servlet-name>  
+<url-pattern>/fourth</url-pattern>  
+</servlet-mapping>
+
+<servlet>  
+<servlet-name>fifth</servlet-name> 
+<servlet-class>com.hnd.Fifth</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>fifth</servlet-name>  
+<url-pattern>/fifth</url-pattern>  
+</servlet-mapping>  
+  
+  
+  <servlet>  
+<servlet-name>sixth</servlet-name>  
+<servlet-class>com.hnd.Sixth</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>sixth</servlet-name>  
+<url-pattern>/sixth</url-pattern>  
+</servlet-mapping>
 </web-app>

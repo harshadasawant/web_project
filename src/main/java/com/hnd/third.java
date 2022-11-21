@@ -23,13 +23,20 @@ public class third extends  HttpServlet {
 		 response.setContentType("text/html");  
 //		 count=0;   
 		 PrintWriter out = response.getWriter();  
+		
 		 ServletContext context= config.getServletContext();
-		 Object company = context.getInitParameter("company");
+		 String company = context.getInitParameter("company");
 		 String username = config.getInitParameter("username");
 		 String password = config.getInitParameter("password");
 		 out.println(username);
 		 out.println(password);
 		 out.println(company);
+		 
+		 Cookie cook=new Cookie("uname","Daksh");//creating cookie object  
+		    response.addCookie(cook);//adding cookie in the response  
+		    out.print("<form action='fourth' method='post'>");  
+		    out.print("<input type='submit' value='Submit'>");  
+		    out.print("</form>"); 
 //		 ServletContext context=getServletContext();  
 //		    out.println(context.getInitParameter("company")); 
 //		    ServletConfig config=getServletConfig(); 

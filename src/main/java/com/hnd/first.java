@@ -30,12 +30,12 @@ public class first extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at First: ").append(request.getContextPath());
-//		RequestDispatcher rd=request.getRequestDispatcher("second");  
+		RequestDispatcher rd=request.getRequestDispatcher("second");  
 //		//servlet2 is the url-pattern of the second servlet  
 //		  
-//		rd.include(request, response);
+		rd.forward(request, response);
 //		response.getWriter().println("  after request");
-		response.sendRedirect("second");
+//		response.sendRedirect("second");
 	}
 
 	/**
